@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+h3 {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+h4 {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.section:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+}
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.secondary-btn {
+    background-color: #008CBA;
+    color: white;
+}
+.warning-btn {
+    background-color: #ff9800;
+    color: white;
+}
+.purple-btn {
+    background-color: #9c27b0;
+    color: white;
+}
+.danger-btn {
+    background-color: #f44336;
+    color: white;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+.management-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.video-list-section {
+    flex: 1;
+}
+.video-list-container {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+.video-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.video-item:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+.video-item.selected {
+    background-color: #e3f2fd;
+    border-color: #2196F3;
+}
+.video-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+.video-meta {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.video-description {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+    max-height: 40px;
+    overflow: hidden;
+}
+.video-actions {
+    display: flex;
+    gap: 5px;
+}
+.video-actions .btn {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.channel-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.channel-list li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    background: white;
+    margin: 2px;
+    border-radius: 2px;
+}
+.channel-list li:last-child {
+    border-bottom: none;
+}
+
+.no-videos {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+    font-style: italic;
+}
+.latest-video-section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+}
+.latest-video-display {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}
+.latest-video-display h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #495057;
+    font-weight: bold;
+}
